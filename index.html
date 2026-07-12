@@ -139,6 +139,7 @@ section{padding:72px 5%}
       <button class="btn-primary" onclick="document.getElementById('mubinso').scrollIntoView({behavior:'smooth'})">무빈소 알아보기</button>
       <button class="btn-secondary" onclick="document.getElementById('gajokjang').scrollIntoView({behavior:'smooth'})">가족장 알아보기</button>
     </div>
+    <a href="https://blog.naver.com/dm_imready_ilsan" target="_blank" style="display:inline-flex;align-items:center;gap:8px;margin-top:18px;color:#f5c994;font-size:14px;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(245,201,148,0.5);padding-bottom:2px">📖 블로그에서 더 많은 정보 알아보기 →</a>
   </div>
 </section>
 
@@ -158,7 +159,7 @@ section{padding:72px 5%}
     <div class="section-label">언론 보도</div>
     <h2 class="section-title">SBS 방송에 소개된 상조플러스</h2>
     <p class="section-sub" style="margin:0 auto 12px">방송을 통해 검증된 투명한 장례 서비스를 확인하세요.</p>
-    <p style="font-size:14px;color:#c8956c;font-weight:600;margin-bottom:36px">▶ 8분 50초부터 미리상조 김으뜸 장례지도사 인터뷰</p>
+    <p style="font-size:14px;color:#c8956c;font-weight:600;margin-bottom:36px">▶ 8분 50초부터 상조플러스(주식회사 미리의전) 김으뜸 장례지도사 인터뷰</p>
     <div style="position:relative;max-width:800px;margin:0 auto;padding-bottom:min(450px,56.25%);height:0;overflow:hidden;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,0.15)">
       <iframe src="https://www.youtube.com/embed/0sVhVGy9eyo?start=530" title="SBS 방송 - 상조플러스" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -317,6 +318,7 @@ section{padding:72px 5%}
     <div id="review-list" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:28px"></div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
       <button onclick="toggleReviewForm()" style="background:#5a3e2b;color:#fff;border:none;padding:11px 28px;border-radius:30px;font-size:14px;font-weight:600;cursor:pointer">후기 작성하기</button>
+      <a href="https://blog.naver.com/dm_imready_ilsan" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#03c75a;color:#fff;padding:11px 28px;border-radius:30px;font-size:14px;font-weight:600;text-decoration:none">N 블로그 바로가기</a>
       <button onclick="adminLogin()" style="background:transparent;border:none;color:#ccc;font-size:11px;cursor:pointer">관리자</button>
     </div>
     <div id="review-form-wrap" style="display:none;margin-top:24px;background:#fff;border:1px solid #e8ddd4;border-radius:16px;padding:28px">
@@ -501,8 +503,8 @@ function adminLogin(){
 }
 
 const reviewData=[
-  {avatar:'정',name:'정○○ 님',product:'가족장 스탠다드',period:'2026년 7월 · 인천',body:'밤 8시 넘어 어머니가 돌아가셨는데 그 시간에도 바로 와주셨어요. 맞는 빈소가 없다고 무리하게 큰 빈소를 권하지 않고, 하루 기다렸다가 알맞은 호실을 잡아주신 게 정말 고마웠습니다. 덕분에 비용도 아끼고 차분하게 보내드렸어요.'},
-  {avatar:'한',name:'한○○ 님',product:'무빈소',period:'2026년 7월 · 부천',body:'92세 어머님을 자택에서 보내드렸습니다. 자택 임종이라 검안 절차가 걱정됐는데 처음부터 끝까지 다 안내해주셔서 막힘없이 진행됐어요. 빈소 없이도 이렇게 정중하게 모실 수 있다는 걸 알았습니다.'},
+  {avatar:'정',name:'정○○ 님',product:'가족장 스탠다드',period:'2026년 7월 · 인천',body:'밤 8시 넘어 어머니가 돌아가셨는데 장례식장에서 작은 빈소가 없다고 무리하게 큰 빈소를 권해서, 하루 기다렸다가 알맞은 호실을 잡아주신 게 정말 고마웠습니다. 덕분에 비용도 아끼고 차분하게 보내드렸어요. 세심하게 신경써주신 이종원 팀장님 감사드립니다.'},
+  {avatar:'한',name:'한○○ 님',product:'무빈소',period:'2026년 7월 · 부천',body:'고령이신 어머님이 곡기를 끊고 몇일 후 자택에서 운명하셨습니다. 자택 임종이라 어찌할지 모르고 당황했는데 처음부터 끝까지 다 안내해주셔서 막힘없이 진행됐어요. 무빈소 진행이라 걱정 많이 했는데 이렇게 정중하게 모셔주셔서 정말 감사드립니다. 주위 가족 친지분들께서도 잘했다고 하시네요. 번창하실겁니다.'},
   {avatar:'윤',name:'윤○○ 님',product:'가족장 베이직',period:'2026년 6월 · 경기도 김포시',body:'조용히 가족끼리만 치르고 싶었는데 딱 맞는 구성이었습니다. 작다고 소홀한 것 하나 없이 상복부터 입관용품까지 다 챙겨주셨어요. 거품 없는 가격에 정말 만족합니다.'},
   {avatar:'송',name:'송○○ 님',product:'무빈소 고급형',period:'2026년 6월 · 서울 강서구',body:'아버지 뜻대로 조문 없이 보내드렸습니다. 생화 꽃관 장식이 정말 아름다웠고, 입관식도 격식 있게 진행해주셨어요. 빈소만 없을 뿐 모든 게 최고급이었습니다.'},
   {avatar:'강',name:'강○○ 님',product:'가족장 프리미엄',period:'2026년 5월 · 경기도 파주시',body:'리무진과 버스가 모두 준비되어 장지 이동이 정말 편했습니다. 입관 매니저분이 아버지 마지막 모습을 품위 있게 단장해주셔서 가족 모두 위안을 받았어요.'},
